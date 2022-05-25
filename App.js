@@ -1,8 +1,9 @@
+import 'react-native-gesture-handler'
 import React from 'react'
 import { View, Text, SafeAreaView } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-
+import DrawerNav from './src/DrawerNav'
 //A tester screen with some inline styling
 function HomeScreen() {
   return (
@@ -31,7 +32,7 @@ function HomeScreenStack() {
 function App() {
   return (
     <NavigationContainer>
-      <HomeScreenStack />
+      <DrawerNav />
     </NavigationContainer>
   )
 }
